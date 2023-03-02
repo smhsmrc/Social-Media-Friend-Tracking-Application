@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.SingInController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="332.0" prefWidth="505.0" style="-fx-background-color: lightblue;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <children>
+            <VBox alignment="CENTER" layoutY="73.0" prefHeight="278.0" prefWidth="238.0">
+               <children>
+                  <ImageView blendMode="COLOR_BURN" fitHeight="106.0" fitWidth="122.0">
+                     <image>
+                        <Image url="@profil.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="186.0" text="Kayıt" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="46.0" prefWidth="194.0" text="İşlemleri" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="235.0" layoutY="73.0" prefHeight="314.0" prefWidth="164.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="82.0" text="Ad:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="52.0" prefWidth="82.0" text="Soyad:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="10.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="65.0" prefWidth="82.0" text="e-posta:" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="20.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="39.0" prefWidth="118.0" text="Bir kullanıcı " textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="49.0" prefWidth="118.0" text="ad belirleyiniz:" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="102.0" text="Bir şifre" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="29.0" prefWidth="87.0" text="belirleyiniz:" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="-10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <TextField fx:id="name" layoutX="366.0" layoutY="82.0" />
+            <TextField fx:id="surName" layoutX="366.0" layoutY="140.0" />
+            <TextField fx:id="ePosta" layoutX="366.0" layoutY="193.0" />
+            <TextField fx:id="userName" layoutX="366.0" layoutY="268.0" prefHeight="26.0" prefWidth="150.0" />
+            <Button fx:id="ComplateSingIn" layoutX="504.0" layoutY="402.0" mnemonicParsing="false" onAction="#ComplateSingInButton" text="Kayıdı Tamamla">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="30.0" layoutY="351.0" prefHeight="54.0" prefWidth="316.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnPage" layoutX="566.0" layoutY="14.0" mnemonicParsing="false" onAction="#returnPageButton" text="Geri Dön">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font></Button>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="13.0" layoutY="6.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="459.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@marmaralogo.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="password" layoutX="367.0" layoutY="338.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

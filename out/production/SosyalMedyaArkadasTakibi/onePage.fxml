@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.OnePageController">
+   <children>
+      <AnchorPane layoutX="172.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightblue;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <Label fx:id="tempUserName" layoutX="21.0" layoutY="116.0" prefHeight="50.0" prefWidth="222.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="188.0" prefHeight="87.0" prefWidth="194.0" text="Takip etme sayfası" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="title" layoutX="259.0" layoutY="63.0" prefHeight="34.0" prefWidth="269.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="createBotUser" layoutX="28.0" layoutY="289.0" mnemonicParsing="false" onAction="#CreateBotUserButton" prefHeight="50.0" prefWidth="194.0" text="Bot Kullanıcı Üret ">
+               <font>
+                  <Font name="Calibri Bold" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="message" layoutX="21.0" layoutY="370.0" prefHeight="54.0" prefWidth="402.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnPage" layoutX="552.0" layoutY="14.0" mnemonicParsing="false" onAction="#ReturnPageButton" text="Geri Dön">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label layoutX="27.0" layoutY="170.0" prefHeight="50.0" prefWidth="174.0" text="Kullanıcı" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="27.0" />
+               </font>
+            </Label>
+            <ListView fx:id="liste" layoutX="263.0" layoutY="101.0" prefHeight="261.0" prefWidth="262.0" />
+            <Button fx:id="followButton" layoutX="450.0" layoutY="382.0" mnemonicParsing="false" onAction="#FollowButton" text="Takip et">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="33.0" layoutY="14.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@marmaralogo.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="70.0" fitWidth="70.0" layoutX="97.0" layoutY="15.0" AnchorPane.leftAnchor="97.0">
+               <image>
+                  <Image url="@profil.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

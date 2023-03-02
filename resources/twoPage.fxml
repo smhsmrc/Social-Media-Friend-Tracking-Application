@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.TwoPageController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightblue;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <VBox layoutX="15.0" layoutY="180.0" prefHeight="158.0" prefWidth="206.0">
+               <children>
+                  <Label text="Takip Ettiğin" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Kullanıcılar/" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Takipten" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label text="Çık" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Label fx:id="tempUserName" layoutX="15.0" layoutY="102.0" prefHeight="77.0" prefWidth="248.0" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="Arial Black" size="36.0" />
+               </font>
+            </Label>
+            <Button fx:id="showFollowingList" layoutX="15.0" layoutY="352.0" mnemonicParsing="false" onAction="#ShowFollowingListButton" prefHeight="38.0" prefWidth="266.0" text="Takip Ettiğin Kullanıcı Listesini Görüntüle">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="title" layoutX="294.0" layoutY="44.0" prefHeight="48.0" prefWidth="266.0">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="returnPage" layoutX="570.0" layoutY="24.0" mnemonicParsing="false" onAction="#ReturnPageButton" text="Geri dön">
+               <font>
+                  <Font name="Calibri Bold" size="14.0" />
+               </font>
+            </Button>
+            <ListView fx:id="liste" focusTraversable="false" layoutX="294.0" layoutY="92.0" prefHeight="298.0" prefWidth="266.0" />
+            <Button fx:id="unfollow" layoutX="480.0" layoutY="423.0" mnemonicParsing="false" onAction="#UnfollowButton" text="Takipten çık">
+               <font>
+                  <Font name="Calibri Bold" size="16.0" />
+               </font></Button>
+            <Label fx:id="message" layoutX="31.0" layoutY="394.0" prefHeight="48.0" prefWidth="423.0" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font></Label>
+            <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="74.0" layoutY="50.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@marmaralogo.png" />
+               </image>
+            </ImageView>
+            <ImageView blendMode="DARKEN" fitHeight="70.0" fitWidth="70.0" layoutX="104.0" layoutY="16.0" AnchorPane.topAnchor="15.0">
+               <image>
+                  <Image url="@profil.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
